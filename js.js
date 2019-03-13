@@ -50,7 +50,7 @@ var shinhan = function(){
 				//$(obj).closest("label").addClass("disabled");
 				//$("label[for="+$(obj).attr("id")+"]").addClass("disabled");
 			}
-		},
+		}
 	};
 	return common;
 }();
