@@ -1,5 +1,8 @@
 var shinhan = function(){
 	var common = {
+		init : function(){
+			common.checkbox();
+		},
 		checkbox : function(){
 			$("input[type=checkbox]").each(function(){
 				if ($(this).closest(".checkbox").length) return;
@@ -47,10 +50,11 @@ var shinhan = function(){
 				//$(obj).closest("label").addClass("disabled");
 				//$("label[for="+$(obj).attr("id")+"]").addClass("disabled");
 			}
-		}
+		},
 	};
 	return common;
 }();
 $(function(){
 	shinhan.init();
 });
+
